@@ -88,5 +88,11 @@ main proc
     MOV DL, '*'
     INT 21H
     
+    ;EXCHANGE
+    ;mov bl, 07h
+    ;mov bh, 03h
+    ;xchg bl, bh  
+    ;mov cl,bl
+    
     mov AH, 4CH
     INT 21H
