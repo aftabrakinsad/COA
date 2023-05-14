@@ -1,13 +1,18 @@
-                            .MODEL SMALL  
- .STACK 100H   
- .DATA
+;Write a program that prompts the user to enter a character, and on sub sequent lines prints its 
+;ascii code in binary, and the number of 1 bit in its ASCII code.
+;User Input: A
+;Binary: 0100 0001
+;Number of 1s: 2
+
+.MODEL SMALL 
+.STACK 100H   
+.DATA
    
    MSG_1  DB  'Enter the character : $'   
    MSG_2  DB  'Binary form is : $'    
    MSG_3  DB  'ASCII code are : $'
    
-     
-  .CODE
+.CODE
      
    MAIN PROC      
    MOV AX, @DATA        
@@ -51,5 +56,5 @@
    MOV AH, 4CH                    
    INT 21H
        
-   MAIN ENDP  
-   END MAIN
+MAIN ENDP  
+END MAIN
